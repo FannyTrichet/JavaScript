@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>New Contact</title>
+
+        <link rel="stylesheet" href="css/stylesheet.css">
+         <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <div id="mainContent" class="container-fluid">
+            <h1 id="title">New Contact</h1>
+            <form id=contactForm class="form-horizontal">
+                <div id="dataContainer" class="modal-body black-font">
+                    <div class="form-group has-feedback">
+                        <label class="col-xs-3" for="firstName">First name:</label>
+                        <div class="col-xs-5">
+                            <input type="text" class="form-control" id="firstName">
+                            <span id="firstNameValidation" class="glyphicon form-control-feedback"></span>
+                        </div>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="col-xs-3" for="lastName">Last name:</label>
+                        <div class="col-xs-5">
+                            <input type="text" class="form-control" id="lastName">
+                            <span id="lastNameValidation" class="glyphicon form-control-feedback"></span>
+                        </div>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="col-xs-3" for="email">Email address:</label>
+                        <div class="col-xs-5">
+                            <input type="email" class="form-control" id="email">
+                            <span id="emailValidation" class="glyphicon form-control-feedback"></span>
+                        </div>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="col-xs-3" for="phone">Phone number:</label>
+                        <div class="col-xs-5">
+                            <input type="text" class="form-control" id="phone">
+                            <span id="phoneValidation" class="glyphicon form-control-feedback"></span>
+                        </div>
+                    </div>    
+
+                </div>
+
+                <div id="buttonContainer" class="modal-footer form-actions">
+                     <button type="button" id="btnSaveContact" class="btn btn-primary">Save Contact</button>
+                     <button type="button" id="btnUpdateContact" class="btn btn-primary hide">Update Contact</button>
+                     <button type="button" id="btnCancel" class="btn btn-primary">Cancel</button>
+
+                </div>
+        </div>
+        <div id="loading" class="hide">
+            <div id="loading-content">
+                Contact creation, please wait...
+            </div>
+        </div>
+        <div class="navbar navbar-inverse navbar-fixed-bottom ">  
+            <p class="navbar-text pull-left">Created by: Fanny Trichet</p>
+            <a href="https://github.com/MatiasBerlot/javascriptFundamentals" class= "navbar-text pull-right">JavaScript Fundamentals</a></div>
+        </div>
+    </body>
+
+	<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    <script src="js/server.min.js"></script>
+    <!--<script src="serverTest.js"></script>-->
+    <script src="js/contact.js"></script>
+</html>
