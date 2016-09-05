@@ -124,7 +124,7 @@
 
             setTimeout(function () {
 
-                var error = rejection || (Math.random() <= 0.8);
+                var error = rejection || (Math.random() <= 0.1);
 
                 if (!error) {
                     resolve();
@@ -133,7 +133,7 @@
                     reject("Internal Server Error");
                 }
 
-            }, Math.random() * 1000);
+            }, 3000);
 
         });
 
